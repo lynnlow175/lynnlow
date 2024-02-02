@@ -35,14 +35,10 @@ p {
 .university {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
 }
-.nus {
-  width: 40%;
-  height: 50%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-.hci {
+.image {
   width: 40%;
   height: 50%;
   object-fit: cover;
@@ -50,4 +46,21 @@ p {
 }
 .education-section {
   background-color: #f4edf5;
+}
+.junior-college {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.high-school {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+p {
+  font-size: 17px;
+  color: var(--heading-color);
+  margin-bottom: 1rem;
 }
