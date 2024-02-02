@@ -1,47 +1,60 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
-function Navbar() {
-  const [navActive, setNavActive] = useState(false);
-
-  const toggleNav = () => {
-    setNavActive(!navActive);
-  };
-
-  const closeMenu = () => {
-    setNavActive(false);
-  };
-
+export default function Navbar() {
+  const location = useLocation();
+  const [activelink, setActiveLink] = useState("");
+  function handleClick(link) {
+    setActiveLink(link);
+  }
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 500) {
-        closeMenu();
-      }
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+    // Set initial active link based on the current location
+    setActiveLink(location.pathname);
+  }, [location.pathname]);
 
-  useEffect(() => {
-    if (window.innerWidth <= 1200) {
-      closeMenu();
-    }
-  }, []);
   return (
-    <nav className={`navbar ${navActive ? "active" : ""}`}>
+    <nav className="navbar">
+      <img src="./logo.svg" />
       <div>
-        <h1>logo</h1>
-      </div>
-      <div>
-        <ul className="navbar_items">
-          <li>Hello</li>
-          <li>About Me</li>
+        <ul className="titles">
+          <li onClick={() => handleClick("/home")}>
+            <Link
+              to="/home"
+              className={activelink === "/home" ? "activeNavTitle" : "navTitle"}
+            >
+              Home
+            </Link>
+          </li>
+          <li onClick={() => handleClick("/education")}>
+            <Link
+              to="/education"
+              className={
+                activelink === "/education" ? "activeNavTitle" : "navTitle"
+              }
+            >
+              Education
+            </Link>
+          </li>
+          <li onClick={() => handleClick("/work")}>
+            <Link
+              to="/work"
+              className={activelink === "/work" ? "activeNavTitle" : "navTitle"}
+            >
+              Work Experience
+            </Link>
+          </li>
+          <li onClick={() => handleClick("/projects")}>
+            <Link
+              to="/projects"
+              className={
+                activelink === "/projects" ? "activeNavTitle" : "navTitle"
+              }
+            >
+              Projects
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
   );
 }
-
-export default Navbar;

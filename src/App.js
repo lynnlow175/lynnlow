@@ -2,7 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Homescreen";
 import Navbar from "./Pages/Home/Navbar";
-import "./App.css";
+import "./Home.css";
+import School from "./Pages/Education/School";
 
 export default function App() {
   return (
@@ -10,7 +11,9 @@ export default function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/Home" element={<Home />}></Route>
+          <Route path="/education" element={<School />} />
+          <Route path="/workexperience" element={<School />} />
           <Route path="*" element={<div>404 Not Found</div>}></Route>
         </Routes>
       </Router>

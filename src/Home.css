@@ -143,20 +143,32 @@ h3 {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 15px 85.333px;
+  background-color: var(--white);
+  padding: 10px;
+  height: 50px;
 }
-.navbar_items {
+.navbar > img {
+  width: 10%;
+}
+.titles {
   display: flex;
-  justify-content: space-between;
+  gap: 32px;
+  list-style-type: none;
+}
+.navTitle:hover {
+  color: var(--primary);
+  cursor: pointer;
   text-decoration: none;
-  list-style: none;
-  gap: 30px;
+}
+.navTitle {
+  color: var(--black);
+  text-decoration: none;
+}
+.activeNavTitle {
+  color: var(--primary);
+  text-decoration: none;
 }
 
-.navbar_items > li {
-  gap: 30px;
-}
 /* Section Titles */
 /* Skills & About Me */
 .section-title {
@@ -196,11 +208,18 @@ h3 {
   gap: 32px;
 }
 .hero-section-content {
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 21.333px;
+  flex: 1;
 }
+.hero-section-content-box,
+.hero-section-img {
+  flex: 1;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+
 .hero-section-content-box > button {
   margin-top: 21.333px;
 }
@@ -220,11 +239,11 @@ h3 {
   font-weight: 400;
   line-height: 36px;
 }
-.hero-section-img {
-  display: flex;
-}
 .hero-section-img > img {
-  width: 60%;
+  width: 100%;
   height: 100%;
+  max-width: 100%;
   margin-left: 200px;
 }
+
+/* Hero Section Style Ends */

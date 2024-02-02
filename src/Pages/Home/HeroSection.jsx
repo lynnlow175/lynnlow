@@ -11,9 +11,7 @@ export default function HeroSection() {
             Developer
           </h1>
           <p className="hero-section-description">
-            Hello this is me low haha
-            <br />
-            lmao gg
+            I am a year 2 computer science student
           </p>
         </div>
         <button className="btn btn-primary">Get In Touch</button>
