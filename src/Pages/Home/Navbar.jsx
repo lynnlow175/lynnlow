@@ -18,7 +18,7 @@ export default function Navbar() {
           <li>
             <Link
               to=""
-              className={activelink === "/home" ? "activeNavTitle" : "navTitle"}
+              className={activelink === "" ? "activeNavTitle" : "navTitle"}
             >
               Home
             </Link>
