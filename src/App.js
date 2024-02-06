@@ -17,7 +17,7 @@ export default function App() {
           <Route path="/education" element={<School />} />
           <Route path="/work" element={<MySkills />} />
           <Route path="/projects" element={<Project />} />
-          <Route path="*" element={<div>404 Not Found</div>}></Route>
+          <Route path="" element={<Home />}></Route>
         </Routes>
       </Router>
     </div>
