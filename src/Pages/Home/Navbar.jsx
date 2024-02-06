@@ -7,7 +7,7 @@ export default function Navbar() {
 
   useEffect(() => {
     // Set initial active link based on the current location
-    setActiveLink(location.pathname);
+    setActiveLink(location.pathname || "/");
   }, [location.pathname]);
 
   return (
@@ -18,7 +18,7 @@ export default function Navbar() {
           <li>
             <Link
               to=""
-              className={activelink === "" ? "activeNavTitle" : "navTitle"}
+              className={activelink === "/" ? "activeNavTitle" : "navTitle"}
             >
               Home
             </Link>
