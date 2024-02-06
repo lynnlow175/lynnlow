@@ -4,9 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 export default function Navbar() {
   const location = useLocation();
   const [activelink, setActiveLink] = useState("");
-  function handleClick(link) {
-    setActiveLink(link);
-  }
+
   useEffect(() => {
     // Set initial active link based on the current location
     setActiveLink(location.pathname);
@@ -14,10 +12,10 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <img src="./logo.svg" />
+      <img src="./logo2.png" />
       <div>
         <ul className="titles">
-          <li onClick={() => handleClick("/home")}>
+          <li>
             <Link
               to="/home"
               className={activelink === "/home" ? "activeNavTitle" : "navTitle"}
@@ -25,7 +23,7 @@ export default function Navbar() {
               Home
             </Link>
           </li>
-          <li onClick={() => handleClick("/education")}>
+          <li>
             <Link
               to="/education"
               className={
@@ -35,7 +33,7 @@ export default function Navbar() {
               Education
             </Link>
           </li>
-          <li onClick={() => handleClick("/work")}>
+          <li>
             <Link
               to="/work"
               className={activelink === "/work" ? "activeNavTitle" : "navTitle"}
@@ -43,7 +41,7 @@ export default function Navbar() {
               Work Experience
             </Link>
           </li>
-          <li onClick={() => handleClick("/projects")}>
+          <li>
             <Link
               to="/projects"
               className={

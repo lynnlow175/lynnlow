@@ -4,6 +4,7 @@ import Home from "./Pages/Home/Homescreen";
 import Navbar from "./Pages/Home/Navbar";
 import "./Home.css";
 import School from "./Pages/Education/School";
+import MySkills from "./Pages/Portfolio/Work";
 
 export default function App() {
   return (
@@ -13,7 +14,7 @@ export default function App() {
         <Routes>
           <Route path="/Home" element={<Home />}></Route>
           <Route path="/education" element={<School />} />
-          <Route path="/workexperience" element={<School />} />
+          <Route path="/work" element={<MySkills />} />
           <Route path="*" element={<div>404 Not Found</div>}></Route>
         </Routes>
       </Router>

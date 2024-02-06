@@ -4,41 +4,41 @@
       "id": "1",
       "src": "/frontend.png",
       "title": "Front-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "description": "I have developed projects using React, leveraging CSS and tailwind for styling and animations"
     },
     {
       "id": "2",
       "src": "/product-chain-1.png",
       "title": "Product Management",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "description": "I have led the development of several projects, from ideation to launch, using agile methodologies"
     },
     {
       "id": "3",
       "src": "/uiux.png",
       "title": "UX/UI Design",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "description": "I have experience designing wire frames and high-fidelity prototypes using Figma and PowerPoint"
     }
   ],
-  "portfolio": [
+  "work": [
     {
       "id": "1",
-      "src": "./img/placeholder-image.png",
-      "title": "Ahuse",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "src": "/nus_fintech_society_logo.jpeg",
+      "title": "Product Manager - Aug 2023 - Present",
+      "description": "Led the development of a Human Resource Management Portal that facilitates administrative tasks such as attendance tracking, onboarding of new members and task management.",
       "link": "View In Github"
     },
     {
       "id": "2",
-      "src": "./img/placeholder-image-1.png",
-      "title": "App Dashboard",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "src": "/orglogo.png",
+      "title": "Product Management Intern - Summer 2023",
+      "description": "During my stint with the company, I was in charge of leading a product from 0 to 1 with a team of full stack engineers. The product is a merchant portal which allows off-line retailers to view their digital receipts online, view basic statistics and some interesting insights such as the amount of paper they saved from adopting digital receipts.",
       "link": "View In Github"
     },
     {
       "id": "3",
-      "src": "./img/placeholder-image-2.png",
-      "title": "Easy Rentn",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "src": "https://www.capitaland.com/content/dam/capitaland-sites/singapore/shop/malls/raffles-city-shopping-centre/tenants/Website_Thumbnail_RafflesMedical.jpg.transform/cap-midres/image.jpg",
+      "title": "Healthcare Assistant - Summer 2022",
+      "description": "In charge of administrative tasks such as customer registration, appoint scheduling and billing.",
       "link": "View In Github"
     }
   ],
