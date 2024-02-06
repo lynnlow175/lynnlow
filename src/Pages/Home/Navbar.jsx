@@ -17,7 +17,7 @@ export default function Navbar() {
         <ul className="titles">
           <li>
             <Link
-              to="/home"
+              to=""
               className={activelink === "/home" ? "activeNavTitle" : "navTitle"}
             >
               Home
