@@ -9,8 +9,8 @@ export default function School() {
           src="https://s3.eu-west-1.amazonaws.com/presspage-production-content/uploads/2580/national_day_education-1-759360.jpg"
         />
         <p>
-          This is the National Univeristy of Singapore and I am currently
-          studying Computer Science here!
+          This is the National Univeristy of Singapore and I am studying here
+          now!
         </p>
       </div>
       <div className="junior-college">
