@@ -3,7 +3,7 @@ import "./Work.css";
 
 export default function Work() {
   return (
-    <div className="exp">
+    <div>
       <section className="work-section">
         <h2 className="work-heading">Work Exprience</h2>
         <div className="work-container">

@@ -1,4 +1,3 @@
-import MySkills from "../Portfolio/Work";
 import Image from "../../img/lynn.JPG";
 
 export default function HeroSection() {

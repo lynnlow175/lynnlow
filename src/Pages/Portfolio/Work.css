@@ -24,13 +24,6 @@ p {
   --black: #000000;
   --white: #ffffff;
 }
-.exp {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
-}
 .skills-section {
   display: flex;
   padding: 120.33px 85.33px;
@@ -70,7 +63,6 @@ p {
 .work-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 30.667px;
   padding-top: 50px;
@@ -81,7 +73,7 @@ p {
   justify-content: center;
   align-items: flex-start;
   gap: 80.6px;
-  padding: 100.33px 30.33px;
+  padding: 100.33px 161.33pxpx;
 }
 .work-box {
   display: flex;

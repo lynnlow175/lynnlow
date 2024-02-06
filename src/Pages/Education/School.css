@@ -36,7 +36,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 10rem;
 }
 .image {
   width: 40%;
@@ -44,23 +44,21 @@ p {
   object-fit: cover;
   border-radius: 10px;
 }
-.education-section {
-  background-color: #f4edf5;
-}
+
 .junior-college {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 10rem;
 }
 .high-school {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 10rem;
 }
 p {
-  font-size: 17px;
+  font-size: 18px;
   color: var(--heading-color);
   margin-bottom: 1rem;
 }
