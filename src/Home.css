@@ -213,12 +213,6 @@ h3 {
   gap: 21.333px;
   flex: 1;
 }
-.hero-section-content-box,
-.hero-section-img {
-  flex: 1;
-  max-width: 50%;
-  box-sizing: border-box;
-}
 
 .hero-section-content-box > button {
   margin-top: 21.333px;
@@ -239,11 +233,13 @@ h3 {
   font-weight: 400;
   line-height: 36px;
 }
+.hero-section-img {
+  display: flex;
+  justify-content: flex-end;
+}
 .hero-section-img > img {
-  width: 100%;
+  width: 500px;
   height: 100%;
-  max-width: 100%;
-  margin-left: 200px;
 }
 
 /* Hero Section Style Ends */
