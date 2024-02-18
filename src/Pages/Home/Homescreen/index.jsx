@@ -1,4 +1,4 @@
-import HeroSection from "../HeroSection.jsx";
+import HeroSection from "../Home.jsx";
 
 export default function Home() {
   return <HeroSection />;
